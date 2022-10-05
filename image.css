@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 10px;
+    box-sizing: border-box;
+
+}
+body{
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(bg2.webp);
+    background-size: cover;
+}
+.container{
+    width:100%;
+    height:200px;
+    margin-left:5px;
+    margin-top:5px;
+}
+
+ .container .logo {
+    height: 10px;
+    width: 50px;
+    padding: 0px;
+    margin-bottom:0;
+    margin: 0;
+
+}
+.logo img{
+    height: 150px;
+    width: 500px;
+}
+.container .navbar{
+    display: flex;
+    float: right;
+
+}
+
+.container .navbar li{
+    position: relative;
+    display:inline-block;
+    padding: 5px;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.container .navbar li::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background:#95a5a6;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+.container .navbar li:hover {
+    color: #95a5a6;
+  }
+.container .navbar li:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  .container .navbar li::after img{
+    width: 0%;
+  }
+
+
+  
+
+section .items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+section .items .box{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+section .items .box img{
+    width: 100%;
+    height: auto;
+}
+
+.navbar li img{
+    height: 25px;
+    width: 25px;
+    margin: auto;
+}
+
+section{
+    background-attachment: fixed;
+    background-color: rgb(175, 138, 90);
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
